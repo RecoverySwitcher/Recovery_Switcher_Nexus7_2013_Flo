@@ -1,0 +1,7 @@
+<@center><b>Recovery In Here/BuildNumber</b></@>
+<*>TWRP 2.7.1.1</*>
+<*>ClockworkMod Touch 6.0.4.9</*>
+<*>ClockworkMod Non Touch 6.0.4.7</*>
+<*>PhilZ Touch 6.48.4</*>
+<*>OUDHS 1.0.3.4</*>
+<*>MultiROM 22B </*>

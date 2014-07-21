@@ -1,0 +1,163 @@
+ui_print("");
+ui_print("");
+ui_print("");
+ui_print("================================");
+ui_print("|Recovery Switcher              |");
+ui_print("|By Flashalot                   |"); 
+ui_print("|For Nexus 7 FLO only           |");
+ui_print("================================");
+ui_print("");
+ui_print("");
+ui_print("Installing BE PATIENT!");
+########################Mounting System########################
+set_progress(0.1);
+ui_print("Begin Installation...");
+ui_print("");
+ui_print("");
+##########################Installation##########################
+ui_print("@Installing Recovery");
+ui_print("");
+ui_print("");
+set_progress(0.10);
+#########################Recoverys##########################
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "1"
+then
+ui_print("@Installing TWRP");
+ui_print("Installing TWRP");
+package_extract_file("recovery/twrp/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "2"
+then
+ui_print("@Installing CWM Touch");
+ui_print("Installing CWM Touch");
+package_extract_file("recovery/cwm_touch/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "3"
+then
+ui_print("@Installing CWM Non-Touch");
+ui_print("Installing CWM Non-Touch");
+package_extract_file("recovery/cwm_notouch/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "4"
+then
+ui_print("@Installing PhilZ Touch Recovery");
+ui_print("Installing PhilZ Touch Recovery");
+package_extract_file("recovery/philz/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "5"
+then
+ui_print("@Installing OUDHS Recovery");
+ui_print("Installing OUDHS Recovery");
+package_extract_file("recovery/oudhs/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+set_progress(0.54);
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "6"
+then
+ui_print("@Installing MultiROM Patch + Recovery");
+ui_print("Installing MultiROM Patch + Recovery");
+delete_recursive("/tmp/multirom");
+run_program("/sbin/busybox", "mkdir", "/tmp/multirom");
+package_extract_dir("multirom", "/tmp/multirom/");
+package_extract_dir("scripts", "/tmp/");
+
+set_perm(0, 0, 0777, "/tmp/multirom/busybox");
+set_perm(0, 0, 0777, "/tmp/bbootimg");
+set_perm(0, 0, 0777, "/tmp/extract_multirom.sh");
+set_perm(0, 0, 0777, "/tmp/inject_boot.sh");
+
+assert(run_program("/tmp/extract_multirom.sh") == 0);
+ui_print("Injecting boot image...");
+assert(run_program("/tmp/inject_boot.sh") == 0);
+
+ui_print("Cleaning up...");
+delete_recursive("/tmp/boot");
+delete_recursive("/tmp/multirom");
+delete("/tmp/bbootimg");
+delete("/tmp/bootimg.cfg");
+delete("/tmp/initrd.img");
+delete("/tmp/zImage");
+delete("/tmp/boot.img");
+delete("/tmp/newboot.img");
+delete("/tmp/extract_multirom.sh");
+delete("/tmp/inject_boot.sh");
+delete("/tmp/bootdev");
+delete("/tmp/rd_addr");
+delete("/tmp/use_mrom_fstab");
+
+package_extract_file("recovery/ml/recovery.img", "/tmp/recovery.img");
+run_program("/sbin/busybox", "dd", "if=/tmp/recovery.img", "of=/dev/block/mmcblk0p25");
+delete("/tmp/recovery.img");
+endif;
+
+if
+file_getprop("/tmp/aroma-data/recovery.prop","selected") == "7"
+then
+ui_print("@Removeing MultiROM Patch");
+ui_print("Removeing MultiROM Patch");
+ui_print("Extracting binaries...");
+run_program("/sbin/busybox", "mount", "/data");
+
+package_extract_dir("mro", "/tmp/");
+
+set_perm(0, 0, 0777, "/tmp/busybox");
+set_perm(0, 0, 0777, "/tmp/bbootimg");
+set_perm(0, 0, 0777, "/tmp/lz4");
+set_perm(0, 0, 0777, "/tmp/erase_multirom.sh");
+set_perm(0, 0, 0777, "/tmp/clear_boot.sh");
+
+ui_print("Removing MultiROM from boot.img...");
+assert(run_program("/tmp/clear_boot.sh") == 0);
+ui_print("Erasing MultiROM's data folder...");
+assert(run_program("/tmp/erase_multirom.sh") == 0);
+
+ui_print("Cleaning up...");
+delete_recursive("/tmp/boot");
+delete_recursive("/tmp/multirom");
+delete("/tmp/lz4");
+delete("/tmp/bootimg.cfg");
+delete("/tmp/initrd.img");
+delete("/tmp/zImage");
+delete("/tmp/bbootimg");
+delete("/tmp/boot.img");
+delete("/tmp/newboot.img");
+delete("/tmp/busybox");
+delete("/tmp/erase_multirom.sh");
+delete("/tmp/clear_boot.sh");
+delete("/tmp/bootdev");
+delete("/tmp/rd_addr");
+
+ui_print("MultiROM was removed!");
+endif;
+##########################End of AROMA##########################
+set_progress(0.6);
+ui_print("@Recovery Installed");
+###########################Unmounting###########################
+set_progress(1.0);
+ui_print("Done!!!!");
+ui_print("Install complete");

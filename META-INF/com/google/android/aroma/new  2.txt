@@ -1,0 +1,60 @@
+[CENTER][INDENT][B][U][SIZE="4"]Disclaimer:[/SIZE][/U][/B][/INDENT]
+By flashing this rom you take [COLOR="Red"]full responsibility to whatever happens on your device[/COLOR]. The developer will NOT be held responsible to whatever happens on your device. Of course, this tool has been tested but whatever happens on your device will not be held against the developer. [/HIDE]
+[CENTER][SIZE="5"][B][U][COLOR="DarkRed"]Recovery Switcher[/COLOR][/U][/B][/SIZE]
+[B]*NOTE*[/B]
+[B][I][COLOR="DarkRed"]If you Want Want To See A Recovery That not in Here Just Ask[/COLOR][/I][/B]
+
+[B][COLOR="Cyan"]Be Sure You Have A HTC One Mini (M4)[/COLOR][/B]
+
+[INDENT][B][SIZE="3"][U]About:[/U][/SIZE][/B][/INDENT]
+One day while on xda I saw a recovery switcher made by another xda user so I said to myself "hay I want that"
+so After Messing With Stuff I Was Done With my Own Recovery Switcher But Enough taking go ahead and flash and have fun IF you like my development please follow my project from desktop, by going on the first page of this thread and pressing from the top black corner the button telling you "FOLLOW PROJECT”.
+THANK YOU
+
+[INDENT][B][SIZE="3"][U]Recoverys In Here:[/U][/SIZE][/B][/INDENT]
+[LIST]
+[B]
+Official PhilZ Touch 6.26.6
+Official TWRP Recovery 2.6.0.0
+Unofficial TWRP Recovery 2.6.3.3 
+Unofficial ClockworkMod Non-Touch 6.0.4.6
+Unofficial PhilZ Touch 6.09.6
+[/LIST]
+
+[INDENT][B][SIZE="3"][U]Features:[/U][/SIZE][/B][/INDENT]
+[LIST]
+[B]
+[*]Switch Pre Built Recovery Made For Your Device On The Fly[/B]
+[B]
+[*]No More Flashing recovery's In Fastboot [/B]
+[/LIST]
+
+[INDENT][B][SIZE="3"][U]Changelog:[/U][/SIZE][/B][/INDENT]
+[B]v1.0 - 4/24/14: [/B]
+Initial Release
+
+[INDENT][B][SIZE="4"][U]Downloads:[/U][/SIZE][/B][/CENTER][/INDENT]
+[CENTER]
+[SIZE="3"][B][URL="http://www.androidfilehost.com/?fid=23329332407588928"] Recovery_Switcher_One_(M8)v1 [/URL][/B][/SIZE]
+MD5 b06b913008c219bb40ae2b31ea7a0d0d
+Don't forget to hit the thanks button, I have worked very hard on this
+[/CENTER]
+
+[INDENT][B][SIZE="3"][U]Instructions:[/U][/SIZE][/B][/INDENT]
+[B][LIST=1]
+[*]Download the zip 
+[*]Boot into recovery 
+[*]Install It like you would with a Mod Or Rom
+[*]Then Set The Check Box At the end With Reboot In To System 
+[*]Then Boot Back In to recovery and See your new recovery
+[/LIST][/B]
+
+[INDENT][B][U][SIZE="3"]Thanks To/Credits:[/SIZE][/U][/B] 
+@amarullz - For Aroma Installer 
+@CNexus - For The Idea (Im getting It Right Now lol)
+@Phil3759- For Philz Recovery 
+@jmz - For Twrp Recovery
+@cmvienneau - For Unofficial Philz,Twrp,CWM
+Big Thank You To @scotty2000,@tr1gg3r84 For Testing :D 
+glencoco
+[/INDENT][/CENTER]

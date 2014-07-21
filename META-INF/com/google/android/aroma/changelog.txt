@@ -1,0 +1,32 @@
+<@center><b>Recovery Switcher 3.0.0</b></@>
+<@center><b>Jul 10 2014</b></@>
+<@center<*>Updated TWRP</*></@>
+<@center<*>Updated ClockworkMod Tounch</*></@>
+<@center<*>Updated PhilZ Touch</*></@>
+<@center<*>Updated MultiROM Patch + Recovery</*></@>
+
+
+<@center><b>Recovery Switcher 4.0.0</b></@>
+<@center><b>Apr 16 2014</b></@>
+<@center<*>Updated MuiltRom</*></@>
+
+
+<@center><b>Recovery Switcher 3.0.0</b></@>
+<@center><b>Mar 13 2014</b></@>
+<@center<*>Updated TWRP</*></@>
+<@center<*>Updated ClockworkMod Tounch/Non Touch</*></@>
+<@center<*>Updated PhilZ Touch</*></@>
+<@center<*>Updated MultiROM Patch + Recovery</*></@>
+<@center<*>Added MultiROM Patch Uninstaler</*></@>
+
+<@center><b>Recovery Switcher 2.0.0</b></@>
+<@center><b>Feb 6 2014</b></@>
+<@center<*>OUDHS Recovery</*></@>
+<@center<*>MultiROM</*></@>
+<@center<*>New Splash Screen Thank You wapvirus And For Testing</*></@>
+
+<@center><b>Recovery Switcher 1.0.0</b></@>
+<@center><b>Jan 25 2014</b></@>
+<@center<*>TWRP</*></@>
+<@center<*>ClockworkMod</*></@>
+<@center<*>PhilZ Touch</*></@>
